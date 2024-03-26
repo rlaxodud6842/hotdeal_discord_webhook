@@ -17,5 +17,6 @@ def discord_send_message():
 discord_send_message()
 schedule.every(1).minutes.do(discord_send_message)
 while True:
+    print("반복")
     schedule.run_pending()
 
