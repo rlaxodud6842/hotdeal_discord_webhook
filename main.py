@@ -13,7 +13,7 @@ def discord_send_message():
 
 discord_send_message()
 
-schedule.every(1).minutes.do(discord_send_message)
+schedule.every(30).seconds.do(discord_send_message)
 while True:
     schedule.run_pending()
 
